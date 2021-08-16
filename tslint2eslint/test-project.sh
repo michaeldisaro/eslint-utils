@@ -15,7 +15,7 @@ BASE_PATH="${INPUTS[0]}"
 
 cd $BASE_PATH
 echo "--- Working on $(pwd) ---"
-yarn install
+yarn install --frozen-lockfile
 yarn build
 yarn test
 yarn lint
